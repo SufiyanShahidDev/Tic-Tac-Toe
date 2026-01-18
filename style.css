@@ -1,5 +1,5 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 *{
   margin: 0;
@@ -29,7 +29,7 @@ body{
     padding: 10px;
     
     
-} */
+}
 .popup-container .game-type-container{
     /*border: 0.5px solid white;*/
     width: 100%;
