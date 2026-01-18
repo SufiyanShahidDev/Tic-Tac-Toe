@@ -1,22 +1,24 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Itim",cursive;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
 }
-body{
+
+body {
     background-color: #040C1A;
 }
-.title{
+
+.title {
     font-size: 50px;
     text-align: center;
     color: #00D9FF;
     margin-top: 10px;
 }
-.popup-container{
+
+.popup-container {
     background-color: #353939;
     width: 325px;
     height: 155px;
@@ -27,10 +29,11 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    
-    
+
+
 }
-.popup-container .game-type-container{
+
+.popup-container .game-type-container {
     /*border: 0.5px solid white;*/
     width: 100%;
     height: 70px;
@@ -38,9 +41,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.game-type-container .game-type{
+
+.game-type-container .game-type {
     /*border: 0.5px solid white;*/
     width: 150px;
     height: 60px;
@@ -55,29 +59,35 @@ body{
     outline: none;
     transition: 0.3s ease;
 }
-.game-type:hover{
-  transform: scale(1.05);
+
+/* .game-type:hover {
+    transform: scale(1.05);
 }
-.game-type-container .dot{
+
+.game-type-container .dot {
     border: 0.5px solid white;
     width: 50px;
     height: 50px;
     color: #1D1804;
-    
+
 }
-.dot .dot-text{
+
+.dot .dot-text {
     text-align: center;
     font-size: 60px;
     margin-bottom: 10px;
 }
-.game-type-container #methods{
+
+.game-type-container #methods {
     padding-left: 20px;
-    
+
 }
-#methods{
+
+#methods {
     cursor: pointer;
 }
-.popup-container .start-btn{
+
+.popup-container .start-btn {
     width: 140px;
     height: 60px;
     border-radius: 50px;
@@ -89,10 +99,12 @@ body{
     cursor: pointer;
     transition: 0.3s ease;
 }
-.start-btn:hover{
-  transform: scale(1.05);
+
+.start-btn:hover {
+    transform: scale(1.05);
 }
-.game-container-ai{
+
+.game-container-ai {
     background-color: #212931;
     width: 460px;
     height: 465px;
@@ -101,10 +113,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-.game-container-ai .box-ai{
+
+.game-container-ai .box-ai {
     width: 155px;
     height: 155px;
-    background-color:#212931;
+    background-color: #212931;
     border: 0.5px solid white;
     display: flex;
     justify-content: center;
@@ -114,18 +127,22 @@ body{
     cursor: pointer;
     transition: 0.5s ease;
 }
-.game-container-ai .box-ai:hover{
+
+.game-container-ai .box-ai:hover {
     transform: scale(1.05);
 }
-.playing-with{
+
+.playing-with {
     text-align: center;
     font-size: 40px;
     color: rgb(162, 255, 0);
 }
-.cover-container-ai{
+
+.cover-container-ai {
     display: none;
 }
-.game-container-person{
+
+.game-container-person {
     background-color: #212931;
     width: 460px;
     height: 465px;
@@ -134,10 +151,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-.game-container-person .box-person{
+
+.game-container-person .box-person {
     width: 155px;
     height: 155px;
-    background-color:#212931;
+    background-color: #212931;
     border: 0.5px solid white;
     display: flex;
     justify-content: center;
@@ -147,30 +165,35 @@ body{
     cursor: pointer;
     transition: 0.5s ease;
 }
-.game-container-person .box-person:hover{
+
+.game-container-person .box-person:hover {
     transform: scale(1.05);
 }
-.playing-with{
+
+.playing-with {
     text-align: center;
     font-size: 40px;
     color: rgb(162, 255, 0);
 }
-.cover-container-person{
+
+.cover-container-person {
     display: none;
 }
+
 .popup {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); Semi-transparent background
-    display: none; Hidden by default
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    Semi-transparent background display: none;
+    Hidden by default justify-content: center;
     align-items: center;
     z-index: 1;
-  }
-  .popup-content {
+}
+
+.popup-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -178,24 +201,26 @@ body{
     height: 280px;
     text-align: center;
     margin: 100px auto;
-    background-color:#040C1A ;
+    background-color: #040C1A;
     border: 0.5px solid white;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(244, 244, 244, 0.3), 
-    0 -4px 10px rgba(244, 244, 244, 0.3),
-    4px 0 10px rgba(244, 244, 244, 0.3), 
-    -4px 0 10px rgba(244, 244, 244, 0.3);
-    
-  }
-  .popup-content .win-loose{
+    box-shadow: 0 4px 10px rgba(244, 244, 244, 0.3),
+        0 -4px 10px rgba(244, 244, 244, 0.3),
+        4px 0 10px rgba(244, 244, 244, 0.3),
+        -4px 0 10px rgba(244, 244, 244, 0.3);
+
+}
+
+.popup-content .win-loose {
     text-align: center;
     font-size: 40px;
     color: lime;
-  }
-  .popup-content .ok-btn{
+}
+
+.popup-content .ok-btn {
     width: 150px;
     height: 60px;
     background-color: #202428;
@@ -206,12 +231,14 @@ body{
     font-size: 30px;
     cursor: pointer;
     transition: transform 0.5s;
-    
-  }
-  .popup-content .ok-btn:hover{
+
+}
+
+.popup-content .ok-btn:hover {
     transform: scale(1.05);
-  }
-  .popup-content .play-other{
+}
+
+.popup-content .play-other {
     width: 160px;
     height: 70px;
     background-color: #202428;
@@ -223,23 +250,26 @@ body{
     cursor: pointer;
     transition: transform 0.5s;
     padding: 10px;
-  }
-  .popup-content .play-other:hover{
+}
+
+.popup-content .play-other:hover {
     transform: scale(1.05);
-  }
-  .popup-person {
+}
+
+.popup-person {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); Semi-transparent background
-    display: none; Hidden by default
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    Semi-transparent background display: none;
+    Hidden by default justify-content: center;
     align-items: center;
     z-index: 1;
-  }
-  .popup-content-person {
+}
+
+.popup-content-person {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -247,24 +277,26 @@ body{
     height: 280px;
     text-align: center;
     margin: 100px auto;
-    background-color:#040C1A ;
+    background-color: #040C1A;
     border: 0.5px solid white;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(244, 244, 244, 0.3), 
-    0 -4px 10px rgba(244, 244, 244, 0.3),
-    4px 0 10px rgba(244, 244, 244, 0.3), 
-    -4px 0 10px rgba(244, 244, 244, 0.3);
-    
-  }
-  .popup-content-person .win-loose-person{
+    box-shadow: 0 4px 10px rgba(244, 244, 244, 0.3),
+        0 -4px 10px rgba(244, 244, 244, 0.3),
+        4px 0 10px rgba(244, 244, 244, 0.3),
+        -4px 0 10px rgba(244, 244, 244, 0.3);
+
+}
+
+.popup-content-person .win-loose-person {
     text-align: center;
     font-size: 40px;
     color: lime;
-  }
-  .popup-content-person .ok-btn-person{
+}
+
+.popup-content-person .ok-btn-person {
     width: 150px;
     height: 60px;
     background-color: #202428;
@@ -275,12 +307,14 @@ body{
     font-size: 30px;
     cursor: pointer;
     transition: transform 0.5s;
-    
-  }
-  .popup-content-person .ok-btn-person:hover{
+
+}
+
+.popup-content-person .ok-btn-person:hover {
     transform: scale(1.05);
-  }
-  .popup-content-person .play-other-person{
+}
+
+.popup-content-person .play-other-person {
     width: 160px;
     height: 70px;
     background-color: #202428;
@@ -292,7 +326,8 @@ body{
     cursor: pointer;
     transition: transform 0.5s;
     padding: 10px;
-  }
-  .popup-content-person .play-other-person:hover{
+}
+
+.popup-content-person .play-other-person:hover {
     transform: scale(1.05);
-  }
+} */
