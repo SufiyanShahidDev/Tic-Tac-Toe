@@ -55,7 +55,7 @@ body{
     outline: none;
     transition: 0.3s ease;
 }
-.game-type:hover{
+/* .game-type:hover{
   transform: scale(1.05);
 }
 .game-type-container .dot{
@@ -164,8 +164,8 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
-    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.9); Semi-transparent background
+    display: none; Hidden by default
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -233,8 +233,8 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
-    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.9); Semi-transparent background
+    display: none; Hidden by default
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -295,4 +295,4 @@ body{
   }
   .popup-content-person .play-other-person:hover{
     transform: scale(1.05);
-  }
+  } */
