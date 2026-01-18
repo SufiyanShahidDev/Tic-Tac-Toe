@@ -55,7 +55,7 @@ body{
     outline: none;
     transition: 0.3s ease;
 }
-/* .game-type:hover{
+.game-type:hover{
   transform: scale(1.05);
 }
 .game-type-container .dot{
@@ -295,4 +295,4 @@ body{
   }
   .popup-content-person .play-other-person:hover{
     transform: scale(1.05);
-  } */
+  }
